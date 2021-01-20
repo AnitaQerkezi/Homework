@@ -1,83 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head> <title>Curriculum Vitae</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Curriculum Vitae</title>
+    </head>
 <body>
     <header id="main-header">
 
         <h1>Profili im</h1>
-        <nav>
+        <nav class="navbar">
 
-        <ul>
-            <li> <a href="#tedhenat">Te dhenat personale</a></li>
-            <li> <a href="#shkollimi">Shkollimi</a></li>
-            <li> <a href="#aftesite">Aftesite</a></li>
+        <ul class="profile-list">
+            <li> <a href="#tedhenat" class="navbar_links">Te dhenat personale</a></li>
+            <li> <a href="#shkollimi" class="navbar_links">Shkollimi</a></li>
+            <li> <a href="#aftesite" class="navbar_links">Aftesite</a></li>
         </ul>
      </nav>
 
     </header>
-    <main class="main content">
+    <main class="main-content">
         <section id ="tedhenat">
             <h2>Te dhenat personale</h2>
        
-        <form>
-            <fieldset>
-                <legend>Te dhenat:</legend>
-                <ul>
-                    <li> <u>Emri dhe Mbiemri:</u><p>Anita Qerkezi</p></li>
-                    <li> <u>Datelindja: </u> <p>06.07.1998</p></li>
-                    <li> <u>Vendbanimi:   </u><p>Prishtine</p></li>
-                    <li> <u>Adresa: </u>  <p>Rruga Liburnia, Dardani</p></li>
-                    <li> <u>Email:</u>   <p>nitaqerkezi@hotmail.com</p></li>
-                    <li> <u>Numer kontakti:</u>   <p>044-491-843</p></li>
+        <form class="form">
+            <fieldset class="fusha">
+                
+                <ul class="form-list">
+                    <li> Emri dhe Mbiemri:<p>Anita Qerkezi</p></li>
+                    <li> Datelindja: <p>06.07.1998</p></li>
+                    <li> Vendbanimi: <p>Prishtine</p></li>
+                    <li> Adresa:   <p>Rruga Liburnia, Dardani</p></li>
+                    <li> Email:   <p>nitaqerkezi@hotmail.com</p></li>
+                    <li> Numer kontakti:  <p>044-491-843</p></li>
                 </ul>
                 <br>
+                <div class="label1">
                 <label for="gjinia">Gjinia</label>
                <select name="" id="gjinia">
                 <option value="n"></option>
                 <option value="f">Female</option>
                 <option value="m">Male</option>
                 </select>
+          
                 <br>
                 <label for="foto">Ngarko foton personale:</label>
                     <input type="file"
                      id="foto" name="foto"
                       accept="image/png, image/jpeg">
+                    </div>
             </fieldset>
         </form>
         </section>
         <section id="shkollimi">
             <h3>Shkollimi</h3>
-            <form>
-                <fieldset>
-                    <legend>Shkollimi</legend>
+            <form class="form2">
+                <fieldset class="fusha2">
+                   
 
-                    <ul>
-                        <li> <u>Shkollimi fillestar:</u><p>Yll Morina,Gjakove.</p></li>
-                        <li> <u>Shkollimi i mesem</u> <p>Gjimnazi"Hajdar Dushi",Gjakove</p></li>
-                        <li> <u>Shkollimi i larte</u><p>Universiteti i Prishtines/FSHMN-Matematike.</p>
+                    <ul class="form-list2">
+                        <li> Shkollimi fillestar:<p>Yll Morina,Gjakove.</p></li>
+                        <li> Shkollimi i mesem: <p>Gjimnazi"Hajdar Dushi",Gjakove</p></li>
+                        <li> Shkollimi i larte:<p>Universiteti i Prishtines/FSHMN-Matematike.</p>
                         <p>UBT-Shkenca Kompjuterike dhe Inxhieneri</p></li>
                     </ul>
+                    <div class="label2">
                     <label for="certifikata">Ngarko certifikaten ketu:</label>
                     <input type="file"
                      id="certifikata" name="certifikata"
                       accept="image/png, image/jpeg">
+                    </div>
 
                 </fieldset>
             </form>
 
         </section>
 <section id="aftesite">
-    <form >
-        <fieldset>
-            <legend>Aftesite</legend>
-            <ul>
-                <li> <u>Aftesite personale</u><p>Aftesi per te punuar ne grupe dhe t’I ndihmoje te tjereve.
+    <h4>Aftesite</h4>
+    <form class="form3">
+        <fieldset class="fusha3">
+            
+            <ul class="form-list3">
+                <li> Aftesite personale:<p>Aftesi per te punuar ne grupe dhe t’i ndihmoje te tjereve.
                     Aftësi në vendosjen dhe mbajtjen e marrëdhënieve të mira të punës me individë të ndryshëm.
                     Aftësi të mira në gjykimin e situatave konkrete.</p></li>
-                <li> <u>Aftesite gjuhesore</u> </li>
+                <li> Aftesite gjuhesore </li>
             </ul>
 
-            <table>
+            <table class="tabela">
                 <thead>
                 <tr>
                     <th></th>
@@ -107,11 +119,12 @@
         </fieldset>
     </form>
 </section>
-
-
-
     </main>
 
+    <footer>
+        <div>&copy; Copyright 2021</div>
+    </footer>
+
 </body>
-</head>
+
 </html>
